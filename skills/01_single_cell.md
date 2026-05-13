@@ -1,109 +1,138 @@
-# 🔬 单细胞与空间转录组技能
+<div align="center">
 
-本目录收录 Biomni 平台中与单细胞测序和空间转录组相关的所有技能。
+# 🔬 Single-Cell & Spatial Transcriptomics
+
+[![Skills in Category](https://img.shields.io/badge/Skills%20in%20Category-7-4CAF50?style=flat-square)](../README.md)
+[![Back to Catalog](https://img.shields.io/badge/Back%20to-Main%20Catalog-blueviolet?style=flat-square)](../README.md)
+
+</div>
+
+---
+
+## Overview
+
+This category covers skills for analyzing single-cell RNA sequencing (scRNA-seq) and spatial transcriptomics data,
+from raw count matrices through cell type annotation, trajectory inference, cell communication, and regulatory network analysis.
+
+| # | Skill Name | Skill ID |
+|---|---|---|
+| 1 | scRNAseq Scanpy Core Analysis | `scrnaseq-scanpy-core-analysis` |
+| 2 | scRNAseq Seurat Core Analysis | `scrnaseq-seurat-core-analysis` |
+| 3 | scRNA Trajectory Inference | `scrna-trajectory-inference` |
+| 4 | Cell-Cell Communication | `cell-cell-communication` |
+| 5 | GRN pySCENIC | `grn-pyscenic` |
+| 6 | Spatial Transcriptomics | `spatial-transcriptomics` |
+| 7 | Pooled CRISPR Screens | `pooled-crispr-screens` |
 
 ---
 
 ## 1. scRNAseq Scanpy Core Analysis
 
 - **Skill ID**: `scrnaseq-scanpy-core-analysis`
-- **适用场景**: 10x Genomics、Smart-seq2 等单细胞 RNA-seq 数据
-- **主要功能**:
-  - 数据质控（QC）：过滤低质量细胞和基因
-  - 归一化与对数变换
-  - 高变基因筛选、PCA 降维
-  - 邻域图构建、UMAP/t-SNE 可视化
-  - Leiden/Louvain 聚类
-  - 差异表达基因识别
-  - 细胞类型自动注释
-- **依赖工具**: Scanpy, AnnData, scvi-tools
+- **Applicable Scenarios**: 10x Genomics, Smart-seq2, and other scRNA-seq platforms
+- **Key Features**:
+  - Quality control: filtering low-quality cells and genes (mitochondrial %, doublet detection)
+  - Normalization, log-transformation, and highly variable gene selection
+  - PCA dimensionality reduction, neighborhood graph construction
+  - UMAP / t-SNE visualization
+  - Leiden / Louvain clustering
+  - Differential expression gene identification per cluster
+  - Automated cell type annotation
+- **Dependencies**: Scanpy, AnnData, scvi-tools, Python
 
 ---
 
 ## 2. scRNAseq Seurat Core Analysis
 
 - **Skill ID**: `scrnaseq-seurat-core-analysis`
-- **适用场景**: 10x Genomics、Drop-seq 等单细胞 RNA-seq 数据
-- **主要功能**:
-  - 数据质控与过滤
-  - SCTransform 归一化
-  - PCA、UMAP 降维与可视化
-  - 图聚类（FindClusters）
-  - 差异表达分析（FindMarkers）
-  - 细胞类型注释
-  - 多样本整合（Harmony/CCA）
-- **依赖工具**: Seurat v5, R
+- **Applicable Scenarios**: 10x Genomics, Drop-seq, and other droplet-based platforms
+- **Key Features**:
+  - Quality control and cell filtering
+  - SCTransform normalization (variance-stabilizing)
+  - PCA, UMAP dimensionality reduction and visualization
+  - Graph-based clustering (FindClusters)
+  - Differential expression analysis (FindMarkers, Wilcoxon / MAST)
+  - Cell type annotation with marker genes
+  - Multi-sample integration (Harmony / CCA / RPCA)
+- **Dependencies**: Seurat v5, R/Bioconductor
 
 ---
 
 ## 3. scRNA Trajectory Inference
 
 - **Skill ID**: `scrna-trajectory-inference`
-- **适用场景**: 发育生物学、细胞分化、干细胞研究
-- **主要功能**:
-  - 拟时序（Pseudotime）排序
-  - 分化轨迹推断（Monocle3/PAGA）
-  - RNA velocity 分析（scVelo）
-  - 细胞命运概率估计（CellRank）
-  - 轨迹相关差异基因识别
-- **依赖工具**: Monocle3, scVelo, CellRank, PAGA
+- **Applicable Scenarios**: Developmental biology, cell differentiation, stem cell research
+- **Key Features**:
+  - Pseudotime ordering along differentiation trajectories
+  - Trajectory inference using Monocle3 / PAGA
+  - RNA velocity analysis (scVelo) for directional dynamics
+  - Cell fate probability estimation (CellRank)
+  - Trajectory-associated differential gene expression
+- **Dependencies**: Monocle3, scVelo, CellRank, PAGA, Python/R
 
 ---
 
 ## 4. Cell-Cell Communication
 
 - **Skill ID**: `cell-cell-communication`
-- **适用场景**: 组织微环境、免疫细胞互作、肿瘤微环境研究
-- **主要功能**:
-  - 配体-受体互作数据库整合
-  - 细胞间通讯网络推断
-  - 信号通路活性分析
-  - 通讯强度可视化（弦图、气泡图）
-  - 差异通讯比较（多条件）
-- **依赖工具**: CellChat v2
+- **Applicable Scenarios**: Tumor microenvironment, immune cell interactions, tissue niche analysis
+- **Key Features**:
+  - Ligand-receptor interaction database integration
+  - Cell communication network inference and scoring
+  - Signaling pathway activity analysis
+  - Communication strength visualization (chord diagrams, bubble plots)
+  - Differential communication comparison across conditions
+- **Dependencies**: CellChat v2, R
 
 ---
 
 ## 5. GRN pySCENIC
 
 - **Skill ID**: `grn-pyscenic`
-- **适用场景**: 转录调控网络研究、转录因子活性分析
-- **主要功能**:
-  - 转录因子调控网络（GRN）推断
-  - 细胞水平 TF 活性评分（AUCell）
-  - Regulon 识别与可视化
-  - 跨细胞类型 TF 活性比较
-- **依赖工具**: pySCENIC, SCENIC+
+- **Applicable Scenarios**: Transcriptional regulatory network research, TF activity analysis
+- **Key Features**:
+  - Gene regulatory network (GRN) inference from scRNA-seq
+  - Cell-level TF activity scoring (AUCell)
+  - Regulon identification and visualization
+  - Cross-cell-type TF activity comparison
+  - Integration with SCENIC+ for multi-omics GRN
+- **Dependencies**: pySCENIC, SCENIC+, Python
 
 ---
 
 ## 6. Spatial Transcriptomics
 
 - **Skill ID**: `spatial-transcriptomics`
-- **适用场景**: 组织切片空间基因表达研究
-- **主要功能**:
-  - 10x Visium 数据 QC 与预处理
-  - 空间域识别与聚类
-  - 空间变异基因（SVG）检测
-  - 细胞类型去卷积
-  - 邻域富集分析
-  - 空间可视化
-- **依赖工具**: Squidpy, Scanpy, RCTD
+- **Applicable Scenarios**: Tissue section spatial gene expression, histology integration
+- **Key Features**:
+  - 10x Visium data QC and preprocessing
+  - Spatial domain identification and clustering
+  - Spatially variable gene (SVG) detection
+  - Cell type deconvolution (RCTD, SPOTlight)
+  - Neighborhood enrichment analysis
+  - Spatial visualization overlaid on tissue images
+- **Dependencies**: Squidpy, Scanpy, RCTD, Python/R
 
 ---
 
 ## 7. Pooled CRISPR Screens
 
 - **Skill ID**: `pooled-crispr-screens`
-- **适用场景**: 功能基因组学筛选、基因功能研究
-- **主要功能**:
-  - Perturb-seq/CROP-seq 数据处理
-  - sgRNA 分配与细胞过滤
-  - 扰动效应评估
-  - 差异表达分析（扰动 vs 对照）
-  - 基因功能富集
-- **依赖工具**: Pertpy, Scanpy
+- **Applicable Scenarios**: Functional genomics, gene function characterization, drug target validation
+- **Key Features**:
+  - Perturb-seq / CROP-seq data processing
+  - sgRNA assignment and cell filtering
+  - Perturbation effect scoring
+  - Differential expression analysis (perturbed vs. control)
+  - Gene functional enrichment of screen hits
+- **Dependencies**: Pertpy, Scanpy, Python
 
 ---
 
-[← 返回主目录](../README.md)
+<div align="center">
+
+[← Back to Main Catalog](../README.md) &nbsp;|&nbsp; [中文主页](../README_CN.md) &nbsp;|&nbsp; [Contributing](../CONTRIBUTING.md)
+
+*Part of the [Biomni Skills Catalog](https://github.com/junior1p/biomni-skills-catalog) · Maintained by [Phylo](https://phylo.com)*
+
+</div>

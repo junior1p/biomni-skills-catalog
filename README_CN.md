@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://avatars.githubusercontent.com/u/155460658?v=4" width="120" alt="Biomni Logo" />
+<img src="https://biomni.phylo.bio/biomni_logo_icon.png" width="120" alt="Biomni by Phylo" />
 
 # Biomni 技能目录
 

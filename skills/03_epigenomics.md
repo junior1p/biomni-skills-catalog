@@ -1,63 +1,88 @@
-# 🧪 表观基因组学技能
+<div align="center">
 
-本目录收录 Biomni 平台中与 ChIP-seq、ATAC-seq、DNA 甲基化等表观基因组学相关的技能。
+# 🧪 Epigenomics
+
+[![Skills in Category](https://img.shields.io/badge/Skills%20in%20Category-4-4CAF50?style=flat-square)](../README.md)
+[![Back to Catalog](https://img.shields.io/badge/Back%20to-Main%20Catalog-blueviolet?style=flat-square)](../README.md)
+
+</div>
+
+---
+
+## Overview
+
+This category covers skills for ChIP-seq, ATAC-seq, DNase-seq, and DNA methylation analysis,
+leveraging the ChIP-Atlas public database of 433,000+ experiments.
+
+| # | Skill Name | Skill ID |
+|---|---|---|
+| 1 | ChIP-Atlas Peak Enrichment | `chip-atlas-peak-enrichment` |
+| 2 | ChIP-Atlas Target Genes | `chip-atlas-target-genes` |
+| 3 | ChIP-Atlas Diff Analysis | `chip-atlas-diff-analysis` |
+| 4 | Upstream Regulator Analysis | `upstream-regulator-analysis` |
 
 ---
 
 ## 1. ChIP-Atlas Peak Enrichment
 
 - **Skill ID**: `chip-atlas-peak-enrichment`
-- **适用场景**: 转录因子结合位点分析、组蛋白修饰研究
-- **主要功能**:
-  - 基于 ChIP-Atlas 43万+ 公开实验数据
-  - 用户基因组区域的峰富集分析
-  - 跨细胞系/组织类型比较
-  - 富集分数计算与排序
-  - 结果可视化与导出
-- **数据来源**: ChIP-Atlas API (https://chip-atlas.org)
+- **Applicable Scenarios**: TF binding site analysis, histone modification profiling
+- **Key Features**:
+  - Enrichment analysis against 433,000+ public ChIP-Atlas experiments
+  - User-defined genomic region input (BED format)
+  - Cross-cell-line and cross-tissue-type comparison
+  - Enrichment score calculation and ranking
+  - Result visualization and export
+- **Data Source**: ChIP-Atlas API (https://chip-atlas.org)
 
 ---
 
 ## 2. ChIP-Atlas Target Genes
 
 - **Skill ID**: `chip-atlas-target-genes`
-- **适用场景**: 转录因子靶基因预测、调控网络构建
-- **主要功能**:
-  - 获取任意 TF 的预计算靶基因列表
-  - 支持按细胞系/组织类型过滤
-  - 靶基因置信度评分
-  - 与差异表达数据整合
-  - 靶基因功能富集分析
-- **数据来源**: ChIP-Atlas 预计算数据库
+- **Applicable Scenarios**: TF target gene prediction, regulatory network construction
+- **Key Features**:
+  - Pre-computed target gene lists for any transcription factor
+  - Filtering by cell line, tissue type, and experiment quality
+  - Target gene confidence scoring
+  - Integration with differential expression data
+  - Functional enrichment of target genes
+- **Data Source**: ChIP-Atlas pre-computed database
 
 ---
 
 ## 3. ChIP-Atlas Diff Analysis
 
 - **Skill ID**: `chip-atlas-diff-analysis`
-- **适用场景**: 条件间表观遗传差异分析
-- **主要功能**:
-  - 两组 ChIP-seq/ATAC-seq/DNase-seq 比较
-  - 差异峰区域（DPR）识别
-  - Bisulfite-seq 差异甲基化区域（DMR）分析
-  - 差异区域注释（基因组位置、最近基因）
-  - 差异区域可视化
-- **数据来源**: ChIP-Atlas API
+- **Applicable Scenarios**: Condition-specific epigenetic changes, treatment response
+- **Key Features**:
+  - Two-group comparison of ChIP-seq / ATAC-seq / DNase-seq experiments
+  - Differential peak region (DPR) identification
+  - Bisulfite-seq differentially methylated region (DMR) analysis
+  - Differential region annotation (genomic location, nearest gene)
+  - Differential region visualization and export
+- **Data Source**: ChIP-Atlas API
 
 ---
 
 ## 4. Upstream Regulator Analysis
 
 - **Skill ID**: `upstream-regulator-analysis`
-- **适用场景**: 转录调控机制研究、药物靶点发现
-- **主要功能**:
-  - 整合 ChIP-Atlas TF 结合数据
-  - 与 RNA-seq 差异表达数据联合分析
-  - 识别驱动转录组变化的上游调控因子
-  - TF 活性评分与排序
-  - 调控网络可视化
-- **依赖工具**: ChIP-Atlas API, R/Python
+- **Applicable Scenarios**: Transcriptional regulatory mechanism research, drug target discovery
+- **Key Features**:
+  - Integration of ChIP-Atlas TF binding data with RNA-seq DE results
+  - Identification of upstream regulators driving transcriptomic changes
+  - TF activity scoring and ranking
+  - Regulatory network visualization
+  - Cross-condition regulator comparison
+- **Dependencies**: ChIP-Atlas API, R/Python
 
 ---
 
-[← 返回主目录](../README.md)
+<div align="center">
+
+[← Back to Main Catalog](../README.md) &nbsp;|&nbsp; [中文主页](../README_CN.md) &nbsp;|&nbsp; [Contributing](../CONTRIBUTING.md)
+
+*Part of the [Biomni Skills Catalog](https://github.com/junior1p/biomni-skills-catalog) · Maintained by [Phylo](https://phylo.com)*
+
+</div>

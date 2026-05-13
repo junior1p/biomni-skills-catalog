@@ -4,7 +4,7 @@
 
 # Biomni Skills Catalog
 
-**The official catalog of AI-powered research skills for the [Biomni](https://phylo.com) platform by Phylo.**
+**The official catalog of AI-powered research skills for the [Biomni](https://phylo.bio) platform by Phylo.**
 
 *From raw data to biological insight — one skill at a time.*
 
@@ -14,7 +14,7 @@
 [![HPC Tools](https://img.shields.io/badge/HPC%20Tools-45-2196F3?style=flat-square&logo=server&logoColor=white)](https://github.com/junior1p/biomni-skills-catalog)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--05--14-orange?style=flat-square)](CHANGELOG.md)
-[![Platform](https://img.shields.io/badge/Platform-Biomni%20by%20Phylo-blueviolet?style=flat-square)](https://phylo.com)
+[![Platform](https://img.shields.io/badge/Platform-Biomni%20by%20Phylo-blueviolet?style=flat-square)](https://phylo.bio)
 
 **[English](README.md) | [中文](README_CN.md)**
 
@@ -42,7 +42,7 @@
 
 ## Overview
 
-Biomni is an AI-powered biomedical research platform built by [Phylo](https://phylo.com). It integrates protein models, bioinformatics tools, and generative AI into a unified, accessible interface.
+Biomni is an AI-powered biomedical research platform built by [Phylo](https://phylo.bio). It integrates protein models, bioinformatics tools, and generative AI into a unified, accessible interface.
 
 This repository catalogs all **Skills** — reusable, expert-curated analytical workflows — available on the Biomni platform. Each skill encapsulates a complete analysis pipeline, from data ingestion to publication-ready outputs.
 
@@ -219,7 +219,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 <div align="center">
 
-Built with care by the [Phylo](https://phylo.com) team · Last updated: 2026-05-14
+Built with care by the [Phylo](https://phylo.bio) team · Last updated: 2026-05-14
 
 *Empowering biomedical research with AI*
 

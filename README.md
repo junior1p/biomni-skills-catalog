@@ -1,135 +1,226 @@
-# 🧬 Biomni Skills Catalog
+<div align="center">
 
-> **Biomni** 是由 [Phylo](https://phylo.com) 打造的 AI 驱动生物医学研究平台，集成蛋白质模型、生物信息学工具与生成式 AI，为科研人员提供一站式智能分析能力。
+<img src="https://avatars.githubusercontent.com/u/155460658?v=4" width="120" alt="Biomni Logo" />
 
-本仓库汇总了 Biomni 平台目前所有可用的**技能（Skills）**，覆盖从原始数据处理到药物发现的完整生物医学研究流程。
+# Biomni Skills Catalog
 
----
+**The official catalog of AI-powered research skills for the [Biomni](https://phylo.com) platform by Phylo.**
 
-## 📚 技能分类总览
-
-| 分类 | 技能数量 |
-|------|---------|
-| [🔬 单细胞与空间转录组](#-单细胞与空间转录组) | 6 |
-| [📊 批量组学数据分析](#-批量组学数据分析) | 5 |
-| [🧪 表观基因组学](#-表观基因组学) | 4 |
-| [🧬 遗传学与变异分析](#-遗传学与变异分析) | 4 |
-| [💊 药物发现与临床](#-药物发现与临床) | 6 |
-| [🔗 序列与结构生物学](#-序列与结构生物学) | 1 |
-| [📁 数据管理与实验设计](#-数据管理与实验设计) | 3 |
-
-**合计：29 个专业技能**
+*From raw data to biological insight — one skill at a time.*
 
 ---
 
-## 🔬 单细胞与空间转录组
+[![Skills](https://img.shields.io/badge/Skills-29-4CAF50?style=flat-square&logo=bookstack&logoColor=white)](https://github.com/junior1p/biomni-skills-catalog)
+[![HPC Tools](https://img.shields.io/badge/HPC%20Tools-45-2196F3?style=flat-square&logo=server&logoColor=white)](https://github.com/junior1p/biomni-skills-catalog)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--05--14-orange?style=flat-square)](CHANGELOG.md)
+[![Platform](https://img.shields.io/badge/Platform-Biomni%20by%20Phylo-blueviolet?style=flat-square)](https://phylo.com)
 
-| 技能名称 | Skill ID | 功能描述 |
-|---------|----------|---------|
-| scRNAseq Scanpy Core Analysis | `scrnaseq-scanpy-core-analysis` | 基于 Scanpy 的单细胞 RNA-seq 全流程分析，从原始数据到细胞类型注释、聚类与可视化 |
-| scRNAseq Seurat Core Analysis | `scrnaseq-seurat-core-analysis` | 基于 Seurat 的单细胞 RNA-seq 全流程分析，从原始数据到细胞类型注释、聚类与可视化 |
-| scRNA Trajectory Inference | `scrna-trajectory-inference` | 分化轨迹推断、拟时序排序、RNA velocity 及细胞命运概率分析 |
-| Cell-Cell Communication | `cell-cell-communication` | 基于 CellChat v2 配体-受体互作分析，推断并可视化细胞间通讯网络 |
-| GRN pySCENIC | `grn-pyscenic` | 基于 pySCENIC 从单细胞 RNA-seq 数据推断转录因子调控网络及细胞水平 TF 活性 |
-| Spatial Transcriptomics | `spatial-transcriptomics` | 10x Visium 空间转录组全流程分析，含 QC、空间域分析、聚类、空间变异基因及邻域富集 |
-| Pooled CRISPR Screens | `pooled-crispr-screens` | 带单细胞 RNA-seq 读出的 CRISPR 筛选分析（Perturb-seq/CROP-seq） |
+**[English](README.md) | [中文](README_CN.md)**
+
+</div>
 
 ---
 
-## 📊 批量组学数据分析
+## Table of Contents
 
-| 技能名称 | Skill ID | 功能描述 |
-|---------|----------|---------|
-| Bulk RNA-seq Counts to DE (DESeq2) | `bulk-rnaseq-counts-to-de-deseq2` | 基于 DESeq2 对 RNA-seq 原始计数数据进行差异表达分析 |
-| Bulk Omics Clustering | `bulk-omics-clustering` | 批量转录组/蛋白组/代谢组数据的样本或特征聚类分析 |
-| Proteomics Diff Exp | `proteomics-diff-exp` | 基于 limma + DEqMS 的质谱蛋白组学差异表达分析，支持 PSM 感知方差估计 |
-| Multi-Omics Integration | `multi-omics-integration` | 基于 MOFA+ 整合 2+ 组学层，识别跨组学变异的潜在因子，含方差分解与因子解读 |
-| Functional Enrichment from DEGs | `functional-enrichment-from-degs` | 基于 clusterProfiler 对差异表达基因进行功能富集分析（GSEA + ORA） |
-| Co-expression Network | `coexpression-network` | 构建基因共表达网络，识别功能模块和枢纽基因 |
-
----
-
-## 🧪 表观基因组学
-
-| 技能名称 | Skill ID | 功能描述 |
-|---------|----------|---------|
-| ChIP-Atlas Peak Enrichment | `chip-atlas-peak-enrichment` | 基于 ChIP-Atlas 43万+实验数据分析 ChIP-seq 峰富集 |
-| ChIP-Atlas Target Genes | `chip-atlas-target-genes` | 从 ChIP-Atlas 公开 ChIP-seq 数据获取任意转录因子的预计算靶基因 |
-| ChIP-Atlas Diff Analysis | `chip-atlas-diff-analysis` | 比较两组 ChIP/ATAC/DNase-seq 或 Bisulfite-seq 实验，识别差异峰区域（DPR）或差异甲基化区域（DMR） |
-| Upstream Regulator Analysis | `upstream-regulator-analysis` | 整合 ChIP-Atlas TF 结合数据与 RNA-seq 差异表达，识别驱动转录组变化的上游调控因子 |
+- [Overview](#overview)
+- [Skills by Category](#skills-by-category)
+  - [Single-Cell & Spatial Transcriptomics](#-single-cell--spatial-transcriptomics)
+  - [Bulk Omics Analysis](#-bulk-omics-analysis)
+  - [Epigenomics](#-epigenomics)
+  - [Genetics & Variant Analysis](#-genetics--variant-analysis)
+  - [Drug Discovery & Clinical](#-drug-discovery--clinical)
+  - [Sequence & Structural Biology](#-sequence--structural-biology)
+  - [Data Management & Experimental Design](#-data-management--experimental-design)
+- [HPC Tools](#hpc-tools)
+- [Quick Start](#quick-start)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-## 🧬 遗传学与变异分析
+## Overview
 
-| 技能名称 | Skill ID | 功能描述 |
-|---------|----------|---------|
-| Genetic Variant Annotation | `genetic-variant-annotation` | 对 VCF 文件中的基因组变异进行功能效应、临床意义和致病性预测注释 |
-| GWAS to Function (TWAS) | `gwas-to-function-twas` | 利用转录组全关联研究（TWAS）从 GWAS 数据识别因果基因和治疗靶点 |
-| Mendelian Randomization | `mendelian-randomization-twosamplemr` | 基于 GWAS 汇总统计和遗传工具变量进行孟德尔随机化因果推断 |
-| Polygenic Risk Score (PRS Catalog) | `polygenic-risk-score-prs-catalog` | 利用 PGS Catalog 预计算权重计算单个或多个性状的多基因风险评分，支持人群比较 |
+Biomni is an AI-powered biomedical research platform built by [Phylo](https://phylo.com). It integrates protein models, bioinformatics tools, and generative AI into a unified, accessible interface.
 
----
+This repository catalogs all **Skills** — reusable, expert-curated analytical workflows — available on the Biomni platform. Each skill encapsulates a complete analysis pipeline, from data ingestion to publication-ready outputs.
 
-## 💊 药物发现与临床
-
-| 技能名称 | Skill ID | 功能描述 |
-|---------|----------|---------|
-| Open Targets Platform | `open-targets` | 通过 GraphQL API 查询 Open Targets 靶点-疾病关联、证据和注释，支持药物靶点识别 |
-| scRNA Disease Drug Discovery | `scrna-disease-drug-discovery` | 端到端单细胞 RNA-seq 疾病分析，整合遗传证据进行多组学药物靶点优先排序 |
-| ClinicalTrials Landscape | `clinicaltrials-landscape` | 查询 ClinicalTrials.gov API v2，按机制、阶段和申办方绘制疾病领域临床试验全景图 |
-| Literature Preclinical | `literature-preclinical` | 搜索靶点在疾病中的临床前研究，从每篇文献中提取结构化体内外实验详情 |
-| LASSO Biomarker Panel | `lasso-biomarker-panel` | 使用 LASSO 正则化结合嵌套交叉验证、稳定性选择和独立队列验证，筛选最小生物标志物面板 |
-| Survival Analysis Clinical | `survival-analysis-clinical` | 对临床时间-事件数据进行 Kaplan-Meier 估计、Cox 比例风险回归和风险分层 |
+| Category | Skills |
+|---|:---:|
+| Single-Cell & Spatial Transcriptomics | 7 |
+| Bulk Omics Analysis | 6 |
+| Epigenomics | 4 |
+| Genetics & Variant Analysis | 4 |
+| Drug Discovery & Clinical | 6 |
+| Sequence & Structural Biology | 1 |
+| Data Management & Experimental Design | 3 |
+| **Total** | **31** |
 
 ---
 
-## 🔗 序列与结构生物学
+## Skills by Category
 
-| 技能名称 | Skill ID | 功能描述 |
-|---------|----------|---------|
-| PCR Primer Design | `pcr-primer-design` | 设计并验证 PCR、qPCR、TaqMan 和测序应用的引物 |
+### 🔬 Single-Cell & Spatial Transcriptomics
+
+> Full documentation: [skills/01_single_cell.md](skills/01_single_cell.md)
+
+| Skill Name | Skill ID | Description |
+|---|---|---|
+| scRNAseq Scanpy Core Analysis | `scrnaseq-scanpy-core-analysis` | Complete scRNA-seq pipeline using Scanpy: QC, normalization, clustering, UMAP, and cell type annotation |
+| scRNAseq Seurat Core Analysis | `scrnaseq-seurat-core-analysis` | Complete scRNA-seq pipeline using Seurat v5: SCTransform, clustering, integration, and annotation |
+| scRNA Trajectory Inference | `scrna-trajectory-inference` | Pseudotime ordering, differentiation trajectory inference, RNA velocity, and cell fate probabilities |
+| Cell-Cell Communication | `cell-cell-communication` | Ligand-receptor interaction analysis and cell communication network inference using CellChat v2 |
+| GRN pySCENIC | `grn-pyscenic` | Transcription factor regulatory network inference and cell-level TF activity scoring via pySCENIC |
+| Spatial Transcriptomics | `spatial-transcriptomics` | 10x Visium spatial transcriptomics: QC, spatial domain analysis, SVG detection, and deconvolution |
+| Pooled CRISPR Screens | `pooled-crispr-screens` | Perturb-seq/CROP-seq analysis: sgRNA assignment, perturbation effect scoring, and DEG analysis |
 
 ---
 
-## 📁 数据管理与实验设计
+### 📊 Bulk Omics Analysis
 
-| 技能名称 | Skill ID | 功能描述 |
-|---------|----------|---------|
-| Omics Dataset Retrieval | `omics-dataset-retrieval` | 从 GEO、ArrayExpress 等公开数据库检索和整理组学数据集 |
-| Experimental Design Statistics | `experimental-design-statistics` | 基因组学实验功效分析、样本量估算、批次设计和多重检验校正 |
-| Disease Progression Longitudinal | `disease-progression-longitudinal` | 从纵向患者组学数据重建疾病进展轨迹 |
+> Full documentation: [skills/02_bulk_omics.md](skills/02_bulk_omics.md)
+
+| Skill Name | Skill ID | Description |
+|---|---|---|
+| Bulk RNA-seq DE (DESeq2) | `bulk-rnaseq-counts-to-de-deseq2` | Differential expression analysis from raw count matrices using DESeq2 with volcano/MA plots |
+| Bulk Omics Clustering | `bulk-omics-clustering` | Sample and feature clustering for transcriptomics, proteomics, and metabolomics data |
+| Proteomics Diff Exp | `proteomics-diff-exp` | Mass spectrometry proteomics differential analysis using limma + DEqMS with PSM-aware variance |
+| Multi-Omics Integration | `multi-omics-integration` | Integrate 2+ omics layers using MOFA+ for latent factor decomposition and cross-omics variance analysis |
+| Functional Enrichment | `functional-enrichment-from-degs` | GO/KEGG/Reactome enrichment (ORA + GSEA) using clusterProfiler on differential expression results |
+| Co-expression Network | `coexpression-network` | WGCNA-based gene co-expression network construction, module identification, and hub gene discovery |
 
 ---
 
-## 🚀 如何使用技能
+### 🧪 Epigenomics
 
-在 Biomni 平台中，可以通过以下方式调用技能：
+> Full documentation: [skills/03_epigenomics.md](skills/03_epigenomics.md)
+
+| Skill Name | Skill ID | Description |
+|---|---|---|
+| ChIP-Atlas Peak Enrichment | `chip-atlas-peak-enrichment` | ChIP-seq peak enrichment analysis against 433,000+ public experiments via ChIP-Atlas API |
+| ChIP-Atlas Target Genes | `chip-atlas-target-genes` | Retrieve pre-computed TF target gene lists from ChIP-Atlas public ChIP-seq data |
+| ChIP-Atlas Diff Analysis | `chip-atlas-diff-analysis` | Differential peak regions (DPR) or differentially methylated regions (DMR) between two conditions |
+| Upstream Regulator Analysis | `upstream-regulator-analysis` | Integrate ChIP-Atlas TF binding with RNA-seq DE to identify upstream transcriptional regulators |
+
+---
+
+### 🧬 Genetics & Variant Analysis
+
+> Full documentation: [skills/04_genetics.md](skills/04_genetics.md)
+
+| Skill Name | Skill ID | Description |
+|---|---|---|
+| Genetic Variant Annotation | `genetic-variant-annotation` | Annotate VCF variants with functional effects, clinical significance (ClinVar), and pathogenicity |
+| GWAS to Function (TWAS) | `gwas-to-function-twas` | Identify causal genes and therapeutic targets from GWAS using transcriptome-wide association studies |
+| Mendelian Randomization | `mendelian-randomization-twosamplemr` | Two-sample MR causal inference using GWAS summary statistics (IVW, MR-Egger, WM, PRESSO) |
+| Polygenic Risk Score | `polygenic-risk-score-prs-catalog` | Calculate PRS using PGS Catalog pre-computed weights with population comparison and risk stratification |
+
+---
+
+### 💊 Drug Discovery & Clinical
+
+> Full documentation: [skills/05_drug_discovery.md](skills/05_drug_discovery.md)
+
+| Skill Name | Skill ID | Description |
+|---|---|---|
+| Open Targets Platform | `open-targets` | Query target–disease associations, drug annotations, and GWAS evidence via Open Targets GraphQL API |
+| scRNA Disease Drug Discovery | `scrna-disease-drug-discovery` | End-to-end scRNA-seq disease analysis with genetic evidence integration for target prioritization |
+| ClinicalTrials Landscape | `clinicaltrials-landscape` | Map clinical trial landscape by mechanism, phase, and sponsor using ClinicalTrials.gov API v2 |
+| Literature Preclinical | `literature-preclinical` | Extract structured in vitro/in vivo experiment details from preclinical literature for any target |
+| LASSO Biomarker Panel | `lasso-biomarker-panel` | Minimal biomarker panel selection using LASSO with nested CV, stability selection, and cohort validation |
+| Survival Analysis | `survival-analysis-clinical` | Kaplan-Meier estimation, Cox regression, and risk stratification from clinical time-to-event data |
+
+---
+
+### 🔗 Sequence & Structural Biology
+
+> Full documentation: [skills/06_other_skills.md](skills/06_other_skills.md)
+
+| Skill Name | Skill ID | Description |
+|---|---|---|
+| PCR Primer Design | `pcr-primer-design` | Design and validate primers for PCR, qPCR, TaqMan, and sequencing with BLAST specificity checks |
+
+---
+
+### 📁 Data Management & Experimental Design
+
+> Full documentation: [skills/06_other_skills.md](skills/06_other_skills.md)
+
+| Skill Name | Skill ID | Description |
+|---|---|---|
+| Omics Dataset Retrieval | `omics-dataset-retrieval` | Search and catalog public omics datasets from GEO, ArrayExpress, ENCODE, and SRA |
+| Experimental Design Statistics | `experimental-design-statistics` | Power analysis, sample size estimation, batch design, and multiple testing correction for genomics |
+| Disease Progression Longitudinal | `disease-progression-longitudinal` | Reconstruct disease progression trajectories from longitudinal patient omics data |
+
+---
+
+## HPC Tools
+
+In addition to Skills, Biomni provides access to **45 high-performance computing tools** for computationally intensive bioinformatics tasks:
+
+| Category | Tools |
+|---|---|
+| **Genome Assembly** | Canu · Flye · hifiasm · MEGAHIT · NextDenovo · Raven · SPAdes · Unicycler · Verkko · wtdbg2 |
+| **Variant Calling** | BCFtools · Clair3 · FreeBayes · Longshot · NanoCaller · PEPPER-DeepVariant · Sniffles · Strelka2 |
+| **RNA-seq & Quantification** | HISAT2 · Kallisto · Salmon · STAR · STAR-Fusion · StringTie · Trinity |
+| **Protein Structure & Design** | AlphaFold v2 · Boltz-2 · BoltzGen · Chai-1 · Foldseek · ImmuneBuilder · ProteinMPNN · RFAntibody · RFDiffusion · ThermoMPNN |
+| **Sequence Alignment** | DIAMOND · minimap2 · MMseqs2 |
+| **Genome Annotation** | Bakta · Prokka |
+| **Single-Cell** | CellBender · Cellpose |
+| **Quality Control** | CheckM2 · MultiQC · QUAST |
+
+---
+
+## Quick Start
+
+Skills are invoked directly within the Biomni platform. Here is an example of how to load and use a skill:
 
 ```python
-# 加载技能
-Skill(action="load", name="<skill_name_or_id>")
-
-# 示例：加载单细胞分析技能
+# Load a skill by name or ID
 Skill(action="load", name="scrnaseq-scanpy-core-analysis")
+
+# Or load by skill ID
+Skill(action="load", name="skill_e4c50152a70f4d6fa8a4802573755f54")
+```
+
+Once loaded, the skill provides step-by-step guidance, code templates, and best practices tailored to your data.
+
+**Example — Differential Expression Analysis:**
+
+```python
+# 1. Load the DESeq2 skill
+Skill(action="load", name="bulk-rnaseq-counts-to-de-deseq2")
+
+# 2. The skill will guide you through:
+#    - Loading your count matrix
+#    - Setting up the DESeq2 design formula
+#    - Running differential expression
+#    - Generating volcano plots and result tables
 ```
 
 ---
 
-## 🔧 HPC 工具（高性能计算）
+## Contributing
 
-除技能外，平台还支持以下 HPC 工具，适用于计算密集型生物信息学任务：
+We welcome contributions to improve and expand this catalog. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
 
-`AlphaFold v2` · `Bakta` · `BCFtools` · `Boltz-2` · `BoltzGen` · `Canu` · `CellBender` · `Cellpose` · `Chai-1` · `CheckM2` · `Clair3` · `DIAMOND` · `Flye` · `Foldseek` · `FreeBayes` · `hifiasm` · `HISAT2` · `ImmuneBuilder` · `Kallisto` · `Longshot` · `MEGAHIT` · `minimap2` · `MMseqs2` · `MultiQC` · `NanoCaller` · `NextDenovo` · `PEPPER-DeepVariant` · `Prokka` · `ProteinMPNN` · `QUAST` · `Raven` · `RFAntibody` · `RFDiffusion` · `Salmon` · `Sniffles` · `SPAdes` · `STAR` · `STAR-Fusion` · `Strelka2` · `StringTie` · `ThermoMPNN` · `Trinity` · `Unicycler` · `Verkko` · `wtdbg2`
-
----
-
-## 📅 更新记录
-
-| 日期 | 内容 |
-|------|------|
-| 2026-05-14 | 初始版本，汇总 29 个技能 |
+- Adding new skills
+- Updating existing skill documentation
+- Reporting issues
 
 ---
 
-> 由 [Biomni (Phylo)](https://phylo.com) 自动生成 · 最后更新：2026-05-14
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+Built with care by the [Phylo](https://phylo.com) team · Last updated: 2026-05-14
+
+*Empowering biomedical research with AI*
+
+</div>

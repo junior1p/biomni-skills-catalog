@@ -36,4 +36,4 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
-*Maintained by the [Phylo](https://phylo.com) team.*
+*Maintained by the [Phylo](https://phylo.bio) team.*

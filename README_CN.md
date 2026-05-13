@@ -4,7 +4,7 @@
 
 # Biomni 技能目录
 
-**[Phylo](https://phylo.com) 旗下 [Biomni](https://phylo.com) 平台 AI 驱动研究技能的官方目录。**
+**[Phylo](https://phylo.bio) 旗下 [Biomni](https://phylo.bio) 平台 AI 驱动研究技能的官方目录。**
 
 *从原始数据到生物学洞见 — 一个技能，一步到位。*
 
@@ -14,7 +14,7 @@
 [![HPC工具](https://img.shields.io/badge/HPC工具-45个-2196F3?style=flat-square&logo=server&logoColor=white)](https://github.com/junior1p/biomni-skills-catalog)
 [![许可证](https://img.shields.io/badge/许可证-MIT-yellow?style=flat-square)](LICENSE)
 [![最后更新](https://img.shields.io/badge/最后更新-2026--05--14-orange?style=flat-square)](CHANGELOG.md)
-[![平台](https://img.shields.io/badge/平台-Biomni%20by%20Phylo-blueviolet?style=flat-square)](https://phylo.com)
+[![平台](https://img.shields.io/badge/平台-Biomni%20by%20Phylo-blueviolet?style=flat-square)](https://phylo.bio)
 
 **[English](README.md) | [中文](README_CN.md)**
 
@@ -42,7 +42,7 @@
 
 ## 平台简介
 
-Biomni 是由 [Phylo](https://phylo.com) 打造的 AI 驱动生物医学研究平台，将蛋白质模型、生物信息学工具与生成式 AI 整合为统一、易用的研究界面。
+Biomni 是由 [Phylo](https://phylo.bio) 打造的 AI 驱动生物医学研究平台，将蛋白质模型、生物信息学工具与生成式 AI 整合为统一、易用的研究界面。
 
 本仓库汇总了 Biomni 平台所有可用的**技能（Skills）**——由专家精心设计的可复用分析工作流，每个技能封装了从数据输入到发表级输出的完整分析流程。
 
@@ -219,7 +219,7 @@ Skill(action="load", name="bulk-rnaseq-counts-to-de-deseq2")
 
 <div align="center">
 
-由 [Phylo](https://phylo.com) 团队用心打造 · 最后更新：2026-05-14
+由 [Phylo](https://phylo.bio) 团队用心打造 · 最后更新：2026-05-14
 
 *以 AI 赋能生物医学研究*
 

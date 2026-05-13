@@ -1,68 +1,93 @@
-# 🔗 其他技能
+<div align="center">
 
-本目录收录 Biomni 平台中序列与结构生物学、数据管理与实验设计相关的技能。
+# 🔗 Sequence, Structural Biology & Data Management
+
+[![Skills in Category](https://img.shields.io/badge/Skills%20in%20Category-4-4CAF50?style=flat-square)](../README.md)
+[![Back to Catalog](https://img.shields.io/badge/Back%20to-Main%20Catalog-blueviolet?style=flat-square)](../README.md)
+
+</div>
 
 ---
 
-## 序列与结构生物学
+## Overview
 
-### PCR Primer Design
+This category covers skills for PCR primer design, public omics dataset retrieval,
+genomics experimental design, and longitudinal disease progression analysis.
+
+| # | Skill Name | Skill ID |
+|---|---|---|
+| 1 | PCR Primer Design | `pcr-primer-design` |
+| 2 | Omics Dataset Retrieval | `omics-dataset-retrieval` |
+| 3 | Experimental Design Statistics | `experimental-design-statistics` |
+| 4 | Disease Progression Longitudinal | `disease-progression-longitudinal` |
+
+---
+
+## Sequence & Structural Biology
+
+### 1. PCR Primer Design
 
 - **Skill ID**: `pcr-primer-design`
-- **适用场景**: 分子克隆、基因表达检测、基因分型
-- **主要功能**:
-  - PCR 引物设计（标准 PCR）
-  - qPCR 引物设计（SYBR Green）
-  - TaqMan 探针设计
-  - 测序引物设计
-  - 引物特异性验证（BLAST）
-  - Tm 计算与二级结构检查
-- **依赖工具**: Primer3, BLAST, BioPython
+- **Applicable Scenarios**: Molecular cloning, gene expression detection, genotyping
+- **Key Features**:
+  - Standard PCR primer design
+  - qPCR primer design (SYBR Green)
+  - TaqMan probe design
+  - Sequencing primer design
+  - Primer specificity validation (BLAST)
+  - Tm calculation and secondary structure checking
+- **Dependencies**: Primer3, BLAST, BioPython
 
 ---
 
-## 数据管理与实验设计
+## Data Management & Experimental Design
 
-### Omics Dataset Retrieval
+### 2. Omics Dataset Retrieval
 
 - **Skill ID**: `omics-dataset-retrieval`
-- **适用场景**: 公开数据挖掘、元分析数据收集
-- **主要功能**:
-  - GEO、ArrayExpress、ENCODE 等数据库检索
-  - 数据集相关性评估与过滤
-  - 元数据提取与标准化
-  - 数据集目录生成（含相关性标签）
-  - 下载链接与访问代码提供
-- **数据来源**: GEO, ArrayExpress, ENCODE, SRA
+- **Applicable Scenarios**: Public data mining, meta-analysis data collection
+- **Key Features**:
+  - Search across GEO, ArrayExpress, ENCODE, SRA, and more
+  - Dataset relevance assessment and filtering
+  - Metadata extraction and standardization
+  - Dataset catalog generation with relevance labels
+  - Download links and access code provision
+- **Data Sources**: GEO, ArrayExpress, ENCODE, SRA
 
 ---
 
-### Experimental Design Statistics
+### 3. Experimental Design Statistics
 
 - **Skill ID**: `experimental-design-statistics`
-- **适用场景**: 实验方案设计、样本量规划
-- **主要功能**:
-  - 功效分析（Power Analysis）
-  - 样本量估算
-  - 批次设计优化
-  - 多重检验校正策略
-  - 实验设计报告生成
-- **依赖工具**: pwr, R
+- **Applicable Scenarios**: Experiment planning, sample size justification, grant applications
+- **Key Features**:
+  - Power analysis for genomics experiments
+  - Sample size estimation (RNA-seq, ATAC-seq, proteomics)
+  - Batch design optimization to minimize confounding
+  - Multiple testing correction strategy selection
+  - Experimental design report generation
+- **Dependencies**: pwr, RNASeqPower, R
 
 ---
 
-### Disease Progression Longitudinal
+### 4. Disease Progression Longitudinal
 
 - **Skill ID**: `disease-progression-longitudinal`
-- **适用场景**: 疾病自然史研究、纵向队列分析
-- **主要功能**:
-  - 纵向患者组学数据处理
-  - 疾病进展轨迹重建
-  - 时间序列聚类
-  - 进展相关生物标志物识别
-  - 轨迹可视化
-- **依赖工具**: mclust, lme4, R/Python
+- **Applicable Scenarios**: Disease natural history research, longitudinal cohort analysis
+- **Key Features**:
+  - Longitudinal patient omics data processing
+  - Disease progression trajectory reconstruction
+  - Time-series clustering
+  - Progression-associated biomarker identification
+  - Trajectory visualization
+- **Dependencies**: mclust, lme4, R/Python
 
 ---
 
-[← 返回主目录](../README.md)
+<div align="center">
+
+[← Back to Main Catalog](../README.md) &nbsp;|&nbsp; [中文主页](../README_CN.md) &nbsp;|&nbsp; [Contributing](../CONTRIBUTING.md)
+
+*Part of the [Biomni Skills Catalog](https://github.com/junior1p/biomni-skills-catalog) · Maintained by [Phylo](https://phylo.com)*
+
+</div>
